@@ -40,7 +40,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , { isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , { isStatic:true, restitution: 0.6});
 	World.add(world, packageBody);
 	//Create a Ground
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true});
